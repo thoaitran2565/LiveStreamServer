@@ -1,7 +1,7 @@
 // Cron job to hit endpoint every 14 sec to keep backend alive always
 import * as cron from 'cron';
 import https from 'https';
-const backendUrl = "https://livestream-server.onrender.com";
+const backendUrl = "https://livestream-server-df2i.onrender.com";
 
 export const job = new cron.CronJob('*/13 * * * *', function () {
     // This function will be executed every 14 minutes.
